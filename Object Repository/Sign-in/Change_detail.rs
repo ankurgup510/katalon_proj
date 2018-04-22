@@ -3,11 +3,10 @@
    <description></description>
    <name>Change_detail</name>
    <tag></tag>
-   <elementGuidId>ac0c7623-f718-4b8e-82d7-2a88cde3fdf3</elementGuidId>
+   <elementGuidId>cba630a5-f7d5-4de9-b9f4-3c7ba39fd025</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

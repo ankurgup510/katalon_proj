@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Password</name>
+   <name>Email</name>
    <tag></tag>
-   <elementGuidId>94fa4c7a-546b-405c-b70b-edb03001db99</elementGuidId>
+   <elementGuidId>46406474-7593-4571-9637-c575deeae1f9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;q-app&quot;]/div/div/div[2]/div/div[3]/div/div[2]/div/div/input</value>
+      <value>//*[@id=&quot;q-app&quot;]/div/div/div[2]/div/div[2]/div/div[2]/div/div/input</value>
    </webElementProperties>
 </WebElementEntity>

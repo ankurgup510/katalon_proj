@@ -21,29 +21,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 ExcelData data = findTestData('Excel file')
-
 for (def index : (1..data.getRowNumbers())) {
 WebUI.openBrowser('https://pwa.earthsquad.global')
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Registration/register_button'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('register_button'))
+WebUI.waitForElementPresent(findTestObject('Registration/Title_register'), 50)
 
-WebUI.delay(10)
+WebUI.sendKeys(findTestObject('Registration/Username'), findTestData('Excel file').getValue('Username', index))
 
-WebUI.waitForElementPresent(findTestObject('Title_register'), 50)
+WebUI.sendKeys(findTestObject('Registration/Email'), findTestData('Excel file').getValue('E-Mail', index))
 
-WebUI.sendKeys(findTestObject('Username'), findTestData('Excel file').getValue('Username', index))
+WebUI.sendKeys(findTestObject('Registration/Password'), findTestData('Excel file').getValue('PWD', index))
 
-WebUI.sendKeys(findTestObject('Email'), findTestData('Excel file').getValue('E-Mail', index))
+WebUI.sendKeys(findTestObject('Registration/Password_2'), findTestData('Excel file').getValue('PWD', index))
 
-WebUI.sendKeys(findTestObject('Password'), findTestData('Excel file').getValue('PWD', index))
-
-WebUI.sendKeys(findTestObject('Password_2'), findTestData('Excel file').getValue('PWD', index))
-
-WebUI.click(findTestObject('Submit'))
+WebUI.click(findTestObject('Registration/Submit'))
 WebUI.delay(20)
- String str=  WebUI.getText(findTestObject('Object Repository/Change_detail'))
+ String str=  WebUI.getText(findTestObject('Registration/Change_detail'))
  if (str.equals("Change Detail"))
  println "logged in"
  else
