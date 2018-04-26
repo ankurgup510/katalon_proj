@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Submit</name>
+   <name>Done</name>
    <tag></tag>
-   <elementGuidId>4efbc1d6-3c13-4ea4-a794-cb2d359e3390</elementGuidId>
+   <elementGuidId>6d7754c2-7637-4ae1-b44b-0c78b184ecfb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;q-app&quot;]/div/div/div[2]/div[1]/div[3]/button[1]/div[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;q-app&quot;]/div/div/div[2]/div[1]/div[3]/button[1]/div[2]</value>
+      <value>//*[@id=&quot;q-app&quot;]/div/div[2]/button[2]/div[2]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>register_button</name>
+   <name>Recycle_search</name>
    <tag></tag>
-   <elementGuidId>db80af89-a4f0-4d8e-b0c7-ae78fa9be7c4</elementGuidId>
+   <elementGuidId>c1c98cdd-9651-4d02-9ad6-7888d0b58fad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div/div/div/div/div[2]/div[1]/div[3]/button[2]</value>
+      <value>//*[@id=&quot;q-app&quot;]/div/div[6]/div/div[2]/div[2]/div[1]/div/div[2]/div/div/input</value>
    </webElementProperties>
 </WebElementEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>Submit</name>
    <tag></tag>
-   <elementGuidId>4efbc1d6-3c13-4ea4-a794-cb2d359e3390</elementGuidId>
+   <elementGuidId>97d7e235-0e52-4598-a598-00fb7f01d9e5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

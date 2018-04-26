@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_1" time="0" tests="0" failures="0" errors="1">
+   <testsuite name="TS_1" tests="0" failures="0" errors="1" time="0" timestamp="2018-04-22 21:02:51" hostname="ankur - ankur-PC" id="Test Suites/TS_1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ankur\\git\\katalon_proj\\Reports\\TS_1\\20180422_210249"/>
+         <property name="logFiles" value="C:\\Users\\ankur\\git\\katalon_proj\\Reports\\TS_1\\20180422_210249\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ankur - ankur-PC"/>
+         <property name="hostAddress" value="192.168.29.1"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.0.1"/>
+      </properties>
+      <testcase name="Test Cases/Sign_in" classname="Test Cases/Sign_in" status="ERROR">
+         <error type="ERROR" message="Test Cases/Sign_in FAILED because (of) org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/ankur/git/katalon_proj/Scripts/Sign_in/Script1524408278604.groovy: 25: unable to resolve class ExcelData 
+ @ line 25, column 11.
+   ExcelData data = findTestData('Excel file')
+             ^
+
+1 error
+"/>
+         <system-out><![CDATA[2018-04-22 21:02:51 - [TEST_CASE][ERROR] - Test Cases/Sign_in: Test Cases/Sign_in FAILED because (of) org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/ankur/git/katalon_proj/Scripts/Sign_in/Script1524408278604.groovy: 25: unable to resolve class ExcelData 
+ @ line 25, column 11.
+   ExcelData data = findTestData('Excel file')
+             ^
+
+1 error]]></system-out>
+         <system-err><![CDATA[2018-04-22 21:02:51 - [TEST_CASE][ERROR] - Test Cases/Sign_in: Test Cases/Sign_in FAILED because (of) org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/ankur/git/katalon_proj/Scripts/Sign_in/Script1524408278604.groovy: 25: unable to resolve class ExcelData 
+ @ line 25, column 11.
+   ExcelData data = findTestData('Excel file')
+             ^
+
+1 error]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-04-22 21:02:51 - [TEST_SUITE][ERROR] - TS_1: Test Cases/Sign_in FAILED because (of) org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/ankur/git/katalon_proj/Scripts/Sign_in/Script1524408278604.groovy: 25: unable to resolve class ExcelData 
+ @ line 25, column 11.
+   ExcelData data = findTestData('Excel file')
+             ^
+
+1 error]]></system-out>
+      <system-err><![CDATA[2018-04-22 21:02:51 - [TEST_SUITE][ERROR] - TS_1: Test Cases/Sign_in FAILED because (of) org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/ankur/git/katalon_proj/Scripts/Sign_in/Script1524408278604.groovy: 25: unable to resolve class ExcelData 
+ @ line 25, column 11.
+   ExcelData data = findTestData('Excel file')
+             ^
+
+1 error]]></system-err>
+   </testsuite>
+</testsuites>

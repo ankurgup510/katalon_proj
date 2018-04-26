@@ -7,6 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;q-app&quot;]/div/div/div/div[1]/div</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
