@@ -27,11 +27,11 @@ for (def index : (1..data.getRowNumbers())) {
 
     WebUI.delay(10)
 
-    WebUI.sendKeys(findTestObject('Sign-in/Username'), findTestData('Sign_in/Excel_file').getValue('Username', index))
+    WebUI.sendKeys(findTestObject('Logout/Username'), findTestData('Sign_in/Excel_file').getValue('Username', index))
 
-    WebUI.sendKeys(findTestObject('Sign-in/Password'), findTestData('Sign_in/Excel_file').getValue('PWD', index))
+    WebUI.sendKeys(findTestObject('Logout/Password'), findTestData('Sign_in/Excel_file').getValue('PWD', index))
 
-    WebUI.click(findTestObject('Sign-in/Submit'))
+    WebUI.click(findTestObject('Logout/Submit'))
 
     WebUI.delay(20)
 
@@ -39,10 +39,13 @@ for (def index : (1..data.getRowNumbers())) {
 
     if (str.equals('Change details')) {
         println('logged in')
+		WebUI.click(findTestObject('Object Repository/Logout/Scan_page'))
+		WebUI.delay(5)
+	    WebUI.click(findTestObject('Object Repository/Logout/Logout'))		
+		WebUI.delay(5)
     } else {
         println('failed to login')
     }
     
     WebUI.closeBrowser()
 }
-

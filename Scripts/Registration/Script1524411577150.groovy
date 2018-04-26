@@ -42,8 +42,8 @@ WebUI.sendKeys(findTestObject('Registration/Password_2'), findTestData('Excel fi
 WebUI.click(findTestObject('Registration/Submit'))
 WebUI.delay(20)
  String str=  WebUI.getText(findTestObject('Registration/Change_detail'))
- if (str.equals("Change Detail"))
- println "logged in"
+  if (str.equals('Change details')) {
+     println('logged in')}
  else
  println "failed to login"
 WebUI.closeBrowser()
