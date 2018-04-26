@@ -110,36 +110,39 @@ for (def index : (1..data.getRowNumbers())) {
 	 
 	
 	 WebUI.delay(5)
-	 println (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key1')))
-	 println (findTestData('Create_product/product_new').getValue('PackMat1', index))
-	 
+	
 	 if (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key1')).contentEquals(findTestData('Create_product/product_new').getValue(
 						'PackMat1', index))) {
 		 WebUI.click(findTestObject('Object Repository/Registration/Recycle_key1'))
-	}
-						
-	WebUI.delay(5)
-						
-	println (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key2')))
-	println (findTestData('Create_product/product_new').getValue('PackMat1', index))
-						
-	if (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key2')).contentEquals(findTestData('Create_product/product_new').getValue( 'PackMat1', index))) {
+	}else if (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key2')).contentEquals(findTestData('Create_product/product_new').getValue( 'PackMat1', index))) {
 		WebUI.click(findTestObject('Object Repository/Registration/Recycle_key2'))
 	  }
+									
+	
 	WebUI.delay(5)
 	
 	println(findTestData('Create_product/product_new').getValue('Packmat2', index).length()) 
 	if(findTestData('Create_product/product_new').getValue('Packmat2', index).length()>0)
 	{
-		WebUI.sendKeys(findTestObject('Object Repository/Create_product/Recycle_search'), findTestData('Create_product/product_new').getValue(
+		WebUI.click(findTestObject('Object Repository/Create_product/Recycling_material'))
+		WebUI.delay(5)
+		WebUI.clearText(findTestObject('Object Repository/Create_product/Recycle_search'))
+		WebUI.delay(5)
+		WebUI.setText(findTestObject('Object Repository/Create_product/Recycle_search'), findTestData('Create_product/product_new').getValue(
 			'Packmat2', index))
 
 		WebUI.delay(5)
 		println (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key1')))
-		println (findTestData('Create_product/product_new').getValue('Packmat1', index))
+		println (findTestData('Create_product/product_new').getValue('Packmat2', index))
 		
-		
-		   
+		if (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key1')).contentEquals(findTestData('Create_product/product_new').getValue(
+			'Packmat2', index))) {
+           WebUI.click(findTestObject('Object Repository/Registration/Recycle_key1'))
+		}else if (WebUI.getText(findTestObject('Object Repository/Registration/Recycle_key2')).contentEquals(findTestData('Create_product/product_new').getValue( 'PackMat1', index))) {
+          WebUI.click(findTestObject('Object Repository/Registration/Recycle_key2'))
+           }
+          WebUI.delay(5)
+	   
 	}
 	
 	
